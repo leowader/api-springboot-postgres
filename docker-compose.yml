@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgres
+    restart: always
+    hostname: host-postgres
+    container_name: postgresdb
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=leowader
+      - POSTGRES_PASSWORD=leowaderhe
+      - POSTGRES_DB=spring
